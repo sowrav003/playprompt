@@ -5,7 +5,7 @@ export default function HeroPreview({
   alt = "Product Preview",
 }) {
   return (
-    <div className="relative w-full max-w-5xl mx-auto mt-10">
+    <div className="relative w-full max-w-5xl mx-auto mt-10 p-4">
       <div className="absolute inset-0 -z-10 flex justify-center">
         <div className="w-120 h-120 bg-primary/20 blur-3xl rounded-full" />
       </div>
