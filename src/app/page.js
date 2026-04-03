@@ -1,88 +1,39 @@
-
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full md:max-w-6xl lg:max-w-7xl flex-col items-center border-t-0 border border-dashed border-muted-foreground/50 bg-white dark:bg-black">
-        <div className="relative px-12 py-20 flex flex-col items-center gap-4">
-          <Badge variant="outline" className="bg-blue-50 text-blue-400 dark:text-blue-400">Next-Gen Prompt Engineering</Badge>
-        <h1 className="text-6xl font-bold tracking-tight text-center text-black dark:text-white sm:text-left">
-          Master the Art of
-        </h1>
-        <h1 className="text-blue-600 text-6xl font-bold tracking-tight text-center dark:text-blue-400 sm:text-left">AI Prompting</h1>
-        <p className="text-wrap text-md text-gray-600 dark:text-gray-400 sm:text-left">
-          Write,test and optimize your AI prompts with ease. Unlock the full potential of AI and create powerful, effective prompts that drive results.
-        </p>
-        <div className="flex items-center gap-4">
-          <Button size="lg" className="bg-blue-600 text-white hover:bg-blue-700">
-            Get Started
-          </Button>
-          <Button variant="outline" size="lg" className="bg-muted flex items-center justify-between">
-            <h2 className="text-sm">Learn More</h2>
-          </Button>
-        </div>
-        </div>
-      </main>
-      <main className="flex flex-1 w-full md:max-w-6xl lg:max-w-7xl flex-col items-center border-t-0 border border-dashed border-muted-foreground/50 bg-white dark:bg-black">
-        <div className="relative px-12 py-20 flex flex-col items-center gap-4">
-          <Badge variant="outline" className="bg-blue-50 text-blue-400 dark:text-blue-400">Next-Gen Prompt Engineering</Badge>
-        <h1 className="text-6xl font-bold tracking-tight text-center text-black dark:text-white sm:text-left">
-          Master the Art of
-        </h1>
-        <h1 className="text-blue-600 text-6xl font-bold tracking-tight text-center dark:text-blue-400 sm:text-left">AI Prompting</h1>
-        <p className="text-wrap text-md text-gray-600 dark:text-gray-400 sm:text-left">
-          Write,test and optimize your AI prompts with ease. Unlock the full potential of AI and create powerful, effective prompts that drive results.
-        </p>
-        <div className="flex items-center gap-4">
-          <Button size="lg" className="bg-blue-600 text-white hover:bg-blue-700">
-            Get Started
-          </Button>
-          <Button variant="outline" size="lg" className="bg-muted flex items-center justify-between">
-            <h2 className="text-sm">Learn More</h2>
-          </Button>
-        </div>
-        </div>
-      </main>
-      <main className="flex flex-1 w-full md:max-w-6xl lg:max-w-7xl flex-col items-center border-t-0 border border-dashed border-muted-foreground/50 bg-white dark:bg-black">
-        <div className="relative px-12 py-20 flex flex-col items-center gap-4">
-          <Badge variant="outline" className="bg-blue-50 text-blue-400 dark:text-blue-400">Next-Gen Prompt Engineering</Badge>
-        <h1 className="text-6xl font-bold tracking-tight text-center text-black dark:text-white sm:text-left">
-          Master the Art of
-        </h1>
-        <h1 className="text-blue-600 text-6xl font-bold tracking-tight text-center dark:text-blue-400 sm:text-left">AI Prompting</h1>
-        <p className="text-wrap text-md text-gray-600 dark:text-gray-400 sm:text-left">
-          Write,test and optimize your AI prompts with ease. Unlock the full potential of AI and create powerful, effective prompts that drive results.
-        </p>
-        <div className="flex items-center gap-4">
-          <Button size="lg" className="bg-blue-600 text-white hover:bg-blue-700">
-            Get Started
-          </Button>
-          <Button variant="outline" size="lg" className="bg-muted flex items-center justify-between">
-            <h2 className="text-sm">Learn More</h2>
-          </Button>
-        </div>
-        </div>
-      </main>
-      <main className="flex flex-1 w-full md:max-w-6xl lg:max-w-7xl flex-col items-center border-t-0 border border-dashed border-muted-foreground/50 bg-white dark:bg-black">
-        <div className="relative px-12 py-20 flex flex-col items-center gap-4">
-          <Badge variant="outline" className="bg-blue-50 text-blue-400 dark:text-blue-400">Next-Gen Prompt Engineering</Badge>
-        <h1 className="text-6xl font-bold tracking-tight text-center text-black dark:text-white sm:text-left">
-          Master the Art of
-        </h1>
-        <h1 className="text-blue-600 text-6xl font-bold tracking-tight text-center dark:text-blue-400 sm:text-left">AI Prompting</h1>
-        <p className="text-wrap text-md text-gray-600 dark:text-gray-400 sm:text-left">
-          Write,test and optimize your AI prompts with ease. Unlock the full potential of AI and create powerful, effective prompts that drive results.
-        </p>
-        <div className="flex items-center gap-4">
-          <Button size="lg" className="bg-blue-600 text-white hover:bg-blue-700">
-            Get Started
-          </Button>
-          <Button variant="outline" size="lg" className="bg-muted flex items-center justify-between">
-            <h2 className="text-sm">Learn More</h2>
-          </Button>
-        </div>
+    <div className="flex flex-col items-center justify-center bg-background text-foreground">
+      <main className="flex flex-1 max-w-7xl flex-col items-center justify-center px-6 py-24">
+        <div className="flex flex-col items-center text-center gap-6 max-w-3xl">
+          <p className="text-sm text-primary">
+            For fast moving engineering teams.
+          </p>
+          <h1 className="text-4xl md:text-6xl font-semibold tracking-tight leading-tight">
+            Manage and simulate <br />
+            <span className="text-primary ">agentic workflows</span>
+          </h1>
+          <p className="text-sm md:text-base text-muted-foreground max-w-xl">
+            We empower developers and technical teams to create, simulate, and
+            manage AI-driven workflows visually
+          </p>
+          <div className="flex items-center gap-4 mt-4">
+            <Button
+              asChild
+              size="lg"
+              className="bg-primary text-primary-foreground hover:opacity-90 px-6"
+            >
+              <Link href="/play-ground">Start building</Link>
+            </Button>
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="border-border text-foreground hover:bg-accent px-6"
+            >
+              <Link href="/pricing">View pricing</Link>
+            </Button>
+          </div>
         </div>
       </main>
     </div>
